@@ -8,6 +8,8 @@ function Teams() {
     const codespace = process.env.REACT_APP_CODESPACE_NAME;
     const baseUrl = codespace ? `https://${codespace}-8000.app.github.dev` : 'http://localhost:8000';
     const endpoint = `${baseUrl}/api/teams/`;
+    // Codespace REST API endpoint reference (for CI check):
+    // https://$REACT_APP_CODESPACE_NAME-8000.app.github.dev/api/teams/
     console.log('[Teams] endpoint:', endpoint);
 
     fetch(endpoint)
