@@ -1,5 +1,9 @@
 from django.contrib import admin
-from .models import User, Team, Activity, Leaderboard, Workout
+from octofit_tracker.models.user import User
+from octofit_tracker.models.team import Team
+from octofit_tracker.models.activity import Activity
+from octofit_tracker.models.leaderboard import Leaderboard
+from octofit_tracker.models.workout import Workout
 
 admin.site.register(User)
 admin.site.register(Team)
